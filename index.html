@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Quiet Ledger — A record of ordinary moments, kept on purpose.</title>
+<meta name="description" content="A record of ordinary moments, kept on purpose. A seasonal journal about slow mornings, home cooking, and a life lived at a quieter pace.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Jost:wght@300;400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav class="site-nav" id="siteNav">
+  <a href="index.html" class="nav-logo">The Quiet Ledger</a>
+  <ul class="nav-links">
+    <li><a href="letters/index.html">Letters</a></li>
+    <li><a href="kitchen/index.html">Kitchen</a></li>
+    <li><a href="philosophy.html">Philosophy</a></li>
+  </ul>
+  <a href="https://shesthegoose.com" target="_blank" class="nav-goose">Things I Love →</a>
+  <button class="nav-hamburger" onclick="openMenu()" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<div class="mobile-nav" id="mobileNav">
+  <button class="mobile-close" onclick="closeMenu()">Close</button>
+  <a href="letters/index.html" onclick="closeMenu()">Letters</a>
+  <a href="kitchen/index.html" onclick="closeMenu()">Kitchen</a>
+  <a href="philosophy.html" onclick="closeMenu()">Philosophy</a>
+  <a href="https://shesthegoose.com" target="_blank" class="goose">Things I Love →</a>
+</div>
+
+<section class="hero">
+  <div class="hero-bg">
+    <img src="images/hero-beach.jpg" alt="Long Island Sound in winter">
+  </div>
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <span class="hero-eyebrow">Est. in quiet moments</span>
+    <h1 class="hero-title">The Quiet <em>Ledger</em></h1>
+    <p class="hero-sub">A record of ordinary moments, kept on purpose.</p>
+    <a href="letters/index.html" class="hero-cta">Begin with the Quiet Letters</a>
+  </div>
+</section>
+
+<section class="letters-section">
+  <div class="section-header">
+    <h2>Quiet Letters</h2>
+    <a href="letters/index.html">All 52 Letters →</a>
+  </div>
+  <div class="letters-stack">
+    <div class="letter-item">
+      <div class="letter-left">
+        <span class="letter-num">No. 1</span>
+        <span class="letter-season">Winter</span>
+      </div>
+      <div class="letter-right">
+        <h3>The Hour Before Anyone Else Wakes</h3>
+        <p class="letter-excerpt">There is a particular quality to the silence at five in the morning. The house holds its breath. The kettle takes its time. I have come to believe this hour belongs to no one in particular — which is exactly why I've claimed it as my own.</p>
+        <a href="letters/letter-01.html" class="read-link">Read the Letter</a>
+      </div>
+    </div>
+    <div class="letter-item">
+      <div class="letter-left">
+        <span class="letter-num">No. 7</span>
+        <span class="letter-season">Winter</span>
+      </div>
+      <div class="letter-right">
+        <h3>The Pot on the Stove</h3>
+        <p class="letter-excerpt">There is a particular kindness in a pot of soup. It does not demand attention, does not require precision. It asks only that you begin — and trust that something good is happening while the afternoon moves through the windows.</p>
+        <a href="letters/letter-07.html" class="read-link">Read the Letter</a>
+      </div>
+    </div>
+    <div class="letter-item">
+      <div class="letter-left">
+        <span class="letter-num">No. 9</span>
+        <span class="letter-season">Winter</span>
+      </div>
+      <div class="letter-right">
+        <h3>Walking in Cold Air</h3>
+        <p class="letter-excerpt">There is something a walk gives you that nothing else does. It is something harder to name — a kind of restoration. I walk by the Sound. That kind of beauty asks something of you. It asks you to be present.</p>
+        <a href="letters/letter-09.html" class="read-link">Read the Letter</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="split">
+  <div class="split-image">
+    <img src="images/kitchen-knife.jpg" alt="From the Kitchen">
+  </div>
+  <div class="split-text">
+    <p class="split-eyebrow">The Kitchen</p>
+    <h2>The Kitchen</h2>
+    <p class="split-intro">I cook most days. Fresh ingredients, local markets, nothing from a box. Not quick and easy — the kind of food that takes its time.</p>
+    <ul class="split-list">
+      <li><a href="kitchen/basic-series.html"><span class="sl-title">The Basic Series</span><span class="sl-arrow">→</span></a></li>
+      <li><a href="kitchen/winter-suppers.html"><span class="sl-title">Winter Suppers</span><span class="sl-arrow">→</span></a></li>
+    </ul>
+  </div>
+</div>
+
+<section class="quote-float">
+  <blockquote>"The ordinary moments are the ones worth keeping."</blockquote>
+  <cite>— The Quiet Ledger</cite>
+</section>
+
+<section class="philosophy">
+  <div class="philosophy-text">
+    <span class="eyebrow">Why This Exists</span>
+    <h2>A Private Notebook,<br>Made Public</h2>
+    <p>The Quiet Ledger began as a record of small mornings, slow meals, and the kind of thinking that only happens when the house is still.</p>
+    <p>Eventually, it felt worth sharing — not as advice, not as instruction, just as a life lived at a quieter pace.</p>
+    <a href="philosophy.html" class="phil-link">Read the Philosophy →</a>
+  </div>
+  <div class="philosophy-aside">
+    <p>A quieter pace, chosen on purpose.</p>
+  </div>
+</section>
+
+<section class="things">
+  <div class="things-header">
+    <div class="things-header-left">
+      <span class="eyebrow">Recommended Things</span>
+      <h2>Things I Love</h2>
+    </div>
+    <a href="https://shesthegoose.com" target="_blank">Visit She's the Goose →</a>
+  </div>
+  <div class="things-grid">
+    <div class="things-cat"><div class="things-cat-num">I</div><h4>From My Kitchen</h4><p>The tools I actually reach for</p></div>
+    <div class="things-cat"><div class="things-cat-num">II</div><h4>The House</h4><p>Making a house feel like home</p></div>
+    <div class="things-cat"><div class="things-cat-num">III</div><h4>What I'm Reading</h4><p>What's on my nightstand right now</p></div>
+    <div class="things-cat"><div class="things-cat-num">IV</div><h4>This Season</h4><p>Things that belong to this moment</p></div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-top">
+    <div class="footer-brand">
+      <h3>The Quiet Ledger</h3>
+      <p>A record of ordinary moments, kept on purpose.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Navigate</h4>
+      <ul>
+        <li><a href="letters/index.html">Quiet Letters</a></li>
+        <li><a href="kitchen/basic-series.html">Basic Series</a></li>
+        <li><a href="kitchen/winter-suppers.html">Winter Suppers</a></li>
+        <li><a href="philosophy.html">Philosophy</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Also</h4>
+      <ul>
+        <li><a href="https://shesthegoose.com" target="_blank">She's the Goose</a></li>
+        <li><a href="https://shesthegoose.com/kitchen" target="_blank">From the Kitchen</a></li>
+        <li><a href="https://shesthegoose.com/seasonal.html" target="_blank">This Season</a></li>
+      </ul>
+    </div>
+  </div>
+  <p class="footer-bottom">© The Quiet Ledger · Written slowly, published carefully</p>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
