@@ -1,348 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>No. 10 · What Comes Back — The Quiet Ledger</title>
-  <meta name="description" content="The ground is still cold when I kneel down to it. A spring letter on hyacinths, the work of October, and what comes back without being asked.">
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
-
-  <!-- If your site uses a shared stylesheet, link it here and remove the <style> block below -->
-  <!-- <link rel="stylesheet" href="/styles.css"> -->
-
-  <style>
-    :root {
-      --bg: #f6f3ed;
-      --paper: #fbf9f4;
-      --ink: #2b2724;
-      --soft: #6b6359;
-      --line: #d8d1c5;
-      --accent: #8a8470;
-      --serif: 'Cormorant Garamond', 'Garamond', serif;
-      --sans: 'Jost', 'Helvetica Neue', sans-serif;
-    }
-
-    * { box-sizing: border-box; }
-
-    html, body {
-      margin: 0;
-      padding: 0;
-      background: var(--bg);
-      color: var(--ink);
-      font-family: var(--sans);
-      font-weight: 300;
-      line-height: 1.75;
-      -webkit-font-smoothing: antialiased;
-      -moz-osx-font-smoothing: grayscale;
-    }
-
-    a { color: var(--ink); text-decoration: none; }
-    a:hover { color: var(--soft); }
-
-    /* ——— Site nav ——— */
-    .site-nav {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 28px 48px;
-      max-width: 1280px;
-      margin: 0 auto;
-    }
-    .brand {
-      font-family: var(--serif);
-      font-size: 22px;
-      font-weight: 500;
-      letter-spacing: 0.02em;
-    }
-    .brand em { font-style: italic; font-weight: 400; }
-    .site-nav ul {
-      list-style: none;
-      display: flex;
-      gap: 36px;
-      margin: 0;
-      padding: 0;
-      font-size: 13px;
-      letter-spacing: 0.12em;
-      text-transform: uppercase;
-    }
-    .site-nav .external {
-      font-size: 13px;
-      letter-spacing: 0.12em;
-      text-transform: uppercase;
-      color: var(--soft);
-    }
-
-    /* ——— Letter ——— */
-    .letter {
-      max-width: 680px;
-      margin: 0 auto;
-      padding: 64px 32px 96px;
-      background: var(--paper);
-    }
-
-    .letter-meta {
-      font-family: var(--sans);
-      font-size: 12px;
-      letter-spacing: 0.22em;
-      text-transform: uppercase;
-      color: var(--accent);
-      text-align: center;
-      margin: 0 0 32px;
-    }
-
-    .letter h1 {
-      font-family: var(--serif);
-      font-weight: 400;
-      font-size: clamp(2.2rem, 4.6vw, 3.4rem);
-      line-height: 1.15;
-      text-align: center;
-      margin: 0 0 48px;
-      letter-spacing: -0.005em;
-    }
-
-    .scripture {
-      margin: 0 0 48px;
-      padding: 0 16px;
-      text-align: center;
-      border: none;
-    }
-    .scripture p {
-      font-family: var(--serif);
-      font-style: italic;
-      font-size: 1.25rem;
-      line-height: 1.6;
-      color: var(--ink);
-      margin: 0 0 14px;
-    }
-    .scripture cite {
-      display: block;
-      font-style: normal;
-      font-family: var(--sans);
-      font-size: 12px;
-      letter-spacing: 0.18em;
-      text-transform: uppercase;
-      color: var(--soft);
-    }
-
-    .letter-image {
-      margin: 0 0 48px;
-    }
-    .letter-image img {
-      display: block;
-      width: 100%;
-      height: auto;
-    }
-    .letter-image figcaption {
-      font-family: var(--sans);
-      font-size: 12px;
-      letter-spacing: 0.08em;
-      color: var(--soft);
-      text-align: center;
-      margin-top: 12px;
-    }
-
-    .letter hr {
-      border: none;
-      border-top: 1px solid var(--line);
-      width: 80px;
-      margin: 0 auto 48px;
-    }
-
-    .letter p {
-      font-family: var(--sans);
-      font-size: 1.0625rem;
-      line-height: 1.85;
-      color: var(--ink);
-      margin: 0 0 1.4em;
-    }
-
-    .letter-pull {
-      font-family: var(--serif);
-      font-style: italic;
-      font-size: 1.45rem;
-      line-height: 1.45;
-      text-align: center;
-      color: var(--ink);
-      margin: 40px 0 !important;
-      padding: 0 24px;
-    }
-
-    .signoff {
-      font-family: var(--serif);
-      font-style: italic;
-      font-size: 1.15rem;
-      line-height: 1.6;
-      margin-top: 48px !important;
-    }
-
-    .letter-nav {
-      display: flex;
-      justify-content: space-between;
-      margin-top: 80px;
-      padding-top: 32px;
-      border-top: 1px solid var(--line);
-      font-family: var(--sans);
-      font-size: 12px;
-      letter-spacing: 0.18em;
-      text-transform: uppercase;
-      color: var(--soft);
-    }
-    .letter-nav a { color: var(--soft); }
-    .letter-nav a:hover { color: var(--ink); }
-
-    /* ——— Footer ——— */
-    .site-footer {
-      background: var(--paper);
-      border-top: 1px solid var(--line);
-      padding: 64px 48px 32px;
-      margin-top: 0;
-    }
-    .footer-inner {
-      max-width: 1080px;
-      margin: 0 auto;
-      display: grid;
-      grid-template-columns: 2fr 1fr 1fr;
-      gap: 48px;
-      align-items: start;
-    }
-    .footer-brand h3 {
-      font-family: var(--serif);
-      font-weight: 500;
-      font-size: 22px;
-      margin: 0 0 8px;
-    }
-    .footer-brand p {
-      font-family: var(--serif);
-      font-style: italic;
-      font-size: 15px;
-      color: var(--soft);
-      margin: 0;
-    }
-    .site-footer h4 {
-      font-family: var(--sans);
-      font-size: 12px;
-      letter-spacing: 0.18em;
-      text-transform: uppercase;
-      color: var(--soft);
-      font-weight: 400;
-      margin: 0 0 16px;
-    }
-    .site-footer ul {
-      list-style: none;
-      margin: 0;
-      padding: 0;
-      font-size: 14px;
-      line-height: 2;
-    }
-    .footer-base {
-      max-width: 1080px;
-      margin: 64px auto 0;
-      padding-top: 24px;
-      border-top: 1px solid var(--line);
-      text-align: center;
-      font-family: var(--sans);
-      font-size: 11px;
-      letter-spacing: 0.16em;
-      text-transform: uppercase;
-      color: var(--soft);
-    }
-
-    @media (max-width: 720px) {
-      .site-nav { padding: 20px 24px; flex-wrap: wrap; gap: 16px; }
-      .site-nav ul { gap: 22px; font-size: 11px; }
-      .letter { padding: 40px 24px 64px; }
-      .letter h1 { margin-bottom: 36px; }
-      .footer-inner { grid-template-columns: 1fr; gap: 32px; }
-      .site-footer { padding: 48px 24px 24px; }
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>No. 10 · What Comes Back — The Quiet Ledger</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Jost:wght@300;400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/style.css">
 </head>
-
 <body>
+<nav class="site-nav" id="siteNav">
+  <a href="../index.html" class="nav-logo">The Quiet Ledger</a>
+  <ul class="nav-links">
+    <li><a href="index.html">Letters</a></li>
+    <li><a href="../kitchen/index.html">Kitchen</a></li>
+    <li><a href="../philosophy.html">Philosophy</a></li>
+  </ul>
+  <a href="https://shesthegoose.com" target="_blank" class="nav-goose">Things I Love →</a>
+  <button class="nav-hamburger" onclick="openMenu()" aria-label="Menu"><span></span><span></span><span></span></button>
+</nav>
+<div class="mobile-nav" id="mobileNav">
+  <button class="mobile-close" onclick="closeMenu()">Close</button>
+  <a href="index.html" onclick="closeMenu()">Letters</a>
+  <a href="../kitchen/index.html" onclick="closeMenu()">Kitchen</a>
+  <a href="../philosophy.html" onclick="closeMenu()">Philosophy</a>
+  <a href="https://shesthegoose.com" target="_blank" class="goose">Things I Love →</a>
+</div>
 
-  <header class="site-nav">
-    <a href="/" class="brand">The Quiet <em>Ledger</em></a>
-    <nav>
-      <ul>
-        <li><a href="/letters/">Letters</a></li>
-        <li><a href="/kitchen/index.html">Kitchen</a></li>
-        <li><a href="/philosophy">Philosophy</a></li>
-      </ul>
-    </nav>
-    <a href="https://shesthegoose.com" class="external">Things I Love →</a>
-  </header>
-
-  <article class="letter">
-    <p class="letter-meta">Spring Letters · No. 10</p>
-
-    <h1>What Comes Back</h1>
-
-    <blockquote class="scripture">
-      <p>“For, lo, the winter is past, the rain is over and gone; the flowers appear on the earth; the time of the singing of birds is come.”</p>
-      <cite>— Song of Solomon 2:11–12</cite>
-    </blockquote>
-
-    <figure class="letter-image">
-      <img src="/images/spring-shoots.jpg" alt="Hyacinth shoots breaking through cold soil in early spring">
-    </figure>
-
-    <hr>
-
-    <p>The ground is still cold. I kneel down to it anyway.</p>
-
-    <p>It is the first afternoon warm enough to be outside without a coat, and I have come to the bed below the stone wall, where the hyacinths are breaking through. They came up before anything else — pale and tightly furled, the whole season pressed into their narrow bodies.</p>
-
-    <p>I had nearly forgotten them.</p>
-
-    <p>That is the strange mercy of what gets planted in October. Something pressed into cold ground, when nothing felt hopeful, will come back without being asked. The work was done before the freeze. The hands that did it were tired. And here is the proof, six months later, lifted into the light.</p>
-
-    <figure class="letter-image">
-      <img src="/images/spring-planting.jpg" alt="Hands pressing bulbs into the soil of a spring garden bed">
-    </figure>
-
-    <p>The shovel goes in. The earth turns darker than I expected, already warming beneath the surface.</p>
-
-    <p>I press the new bulbs into the soil and firm the ground over them. My ring is muddy. My knees ache. I stay anyway.</p>
-
-    <p class="letter-pull">We do not always know what we are tending when we tend it.</p>
-
-    <p>This is the work of spring. Not the bloom, not yet. The kneeling. The bending close. The remembering of what was planted.</p>
-
-    <p class="signoff">Until next week,<br>Jessica</p>
-
-    <nav class="letter-nav">
-      <a href="/letters/letter-09">← No. 09</a>
-      <a href="/letters/letter-11">No. 11 →</a>
-    </nav>
-  </article>
-
-  <footer class="site-footer">
-    <div class="footer-inner">
-      <div class="footer-brand">
-        <h3>The Quiet Ledger</h3>
-        <p>A record of ordinary moments, kept on purpose.</p>
-      </div>
-      <div>
-        <h4>Navigate</h4>
-        <ul>
-          <li><a href="/letters/">Quiet Letters</a></li>
-          <li><a href="/kitchen/basic-series">Basic Series</a></li>
-          <li><a href="/kitchen/winter-suppers">Winter Suppers</a></li>
-          <li><a href="/philosophy">Philosophy</a></li>
-        </ul>
-      </div>
-      <div>
-        <h4>Also</h4>
-        <ul>
-          <li><a href="https://shesthegoose.com">She’s the Goose</a></li>
-        </ul>
-      </div>
+<article class="letter-page">
+  <p class="letter-page-meta">Spring Letters · No. 10</p>
+  <h1>What Comes Back</h1>
+  <div class="scripture-block">
+    <p>"For, lo, the winter is past, the rain is over and gone; the flowers appear on the earth; the time of the singing of birds is come."</p>
+    <cite>— Song of Solomon 2:11–12</cite>
+  </div>
+  <hr class="letter-divider">
+  <div class="letter-content">
+    <div class="photo-block">
+      <img src="../images/spring-shoots.jpg" alt="Hyacinth shoots breaking through cold soil in early spring">
     </div>
-    <div class="footer-base">© The Quiet Ledger · Written slowly, published carefully</div>
-  </footer>
+    <p>The ground is still cold. I kneel down to it anyway.</p>
+    <p>It is the first afternoon warm enough to be outside without a coat, and I have come to the bed below the stone wall, where the hyacinths are breaking through. They came up before anything else — pale and tightly furled, the whole season pressed into their narrow bodies.</p>
+    <p>I had nearly forgotten them.</p>
+    <p>That is the strange mercy of what gets planted in October. Something pressed into cold ground, when nothing felt hopeful, will come back without being asked. The work was done before the freeze. The hands that did it were tired. And here is the proof, six months later, lifted into the light.</p>
+    <div class="photo-block">
+      <img src="../images/spring-planting.jpg" alt="Hands pressing bulbs into the soil of a spring garden bed">
+    </div>
+    <p>The shovel goes in. The earth turns darker than I expected, already warming beneath the surface.</p>
+    <p>I press the new bulbs into the soil and firm the ground over them. My ring is muddy. My knees ache. I stay anyway.</p>
+    <p>We do not always know what we are tending when we tend it.</p>
+  </div>
+  <div class="letter-closing">
+    <p>This is the work of spring. Not the bloom, not yet. The kneeling. The bending close. The remembering of what was planted.</p>
+    <p>Until next week,<br>Jessica</p>
+  </div>
+  <div class="letter-nav-row">
+    <a href="letter-09.html">← No. 09</a>
+    <a href="letter-11.html">No. 11 →</a>
+  </div>
+</article>
 
+<footer>
+  <div class="footer-top">
+    <div class="footer-brand">
+      <h3>The Quiet Ledger</h3>
+      <p>A record of ordinary moments, kept on purpose.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Navigate</h4>
+      <ul>
+        <li><a href="index.html">Quiet Letters</a></li>
+        <li><a href="../kitchen/basic-series.html">Basic Series</a></li>
+        <li><a href="../kitchen/winter-suppers.html">Winter Suppers</a></li>
+        <li><a href="../philosophy.html">Philosophy</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Also</h4>
+      <ul>
+        <li><a href="https://shesthegoose.com" target="_blank">She's the Goose</a></li>
+      </ul>
+    </div>
+  </div>
+  <p class="footer-bottom">© The Quiet Ledger · Written slowly, published carefully</p>
+</footer>
+<script src="../js/main.js"></script>
 </body>
 </html>
