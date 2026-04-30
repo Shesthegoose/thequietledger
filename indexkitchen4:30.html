@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Kitchen — The Quiet Ledger</title>
+<meta name="description" content="Recipes and kitchen rituals meant to be lived with, not rushed through.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Jost:wght@300;400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/style.css">
+<style>
+/* KITCHEN HERO */
+.kitchen-hero{position:relative;width:100%;height:75vh;min-height:520px;overflow:hidden;background:#1A1410}
+.kitchen-hero img{width:100%;height:100%;object-fit:cover;object-position:center 60%;opacity:.88}
+.kitchen-hero-overlay{position:absolute;inset:0;background:linear-gradient(to bottom,rgba(8,6,4,.25) 0%,rgba(8,6,4,.05) 40%,rgba(8,6,4,.45) 100%)}
+.kitchen-hero-caption{position:absolute;bottom:3.5rem;left:0;right:0;text-align:center;z-index:2}
+.kitchen-hero-caption span{font-family:'Jost',sans-serif;font-size:.54rem;font-weight:300;letter-spacing:.32em;text-transform:uppercase;color:rgba(255,255,255,.85);text-shadow:0 1px 10px rgba(0,0,0,.6)}
+
+/* KITCHEN MASTHEAD */
+.kitchen-masthead{padding:8rem 5vw 5.75rem;text-align:center;background:#F2EFE8;border-bottom:1px solid #D5CFC4}
+.kitchen-masthead .eyebrow{font-family:'Jost',sans-serif;font-size:.54rem;font-weight:300;letter-spacing:.32em;text-transform:uppercase;color:#8A8070;margin-bottom:1.8rem;display:block}
+.kitchen-masthead h1{font-family:'Cormorant Garamond',serif;font-size:clamp(3rem,7vw,5.5rem);font-weight:300;line-height:1.05;letter-spacing:.02em;color:#2E2820;margin-bottom:2rem}
+.kitchen-masthead h1 em{font-style:italic;font-weight:300}
+.kitchen-masthead .lede{font-family:'Cormorant Garamond',serif;font-size:clamp(1.05rem,1.6vw,1.25rem);font-weight:300;font-style:italic;color:#5A4F42;line-height:1.7;max-width:520px;margin:0 auto;letter-spacing:.01em}
+.kitchen-rule{display:block;width:60px;height:1px;background:#ADA398;margin:3rem auto 0}
+
+/* TABLE OF CONTENTS LABEL */
+.kitchen-toc-label{text-align:center;padding:6.9rem 5vw 1.75rem;background:#F2EFE8}
+.kitchen-toc-label span{font-family:'Jost',sans-serif;font-size:.5rem;font-weight:300;letter-spacing:.36em;text-transform:uppercase;color:#ADA398}
+
+/* CHAPTER LIST - NO CARDS, FULL WIDTH */
+.kitchen-chapters{background:#F2EFE8;padding:0 0 6.9rem}
+.chapter{display:block;text-decoration:none;color:inherit;padding:5.75rem 5vw;border-top:1px solid #D5CFC4;transition:background .35s ease}
+.chapter:last-of-type{border-bottom:1px solid #D5CFC4}
+.chapter:hover{background:#EDE9E1}
+.chapter:hover .chapter-title{color:#6B5C3E}
+.chapter:hover .chapter-link{gap:1.1rem}
+
+.chapter-inner{max-width:1080px;margin:0 auto;display:grid;grid-template-columns:130px 1fr;gap:4rem;align-items:baseline}
+.chapter-numeral{font-family:'Cormorant Garamond',serif;font-size:clamp(2.8rem,5vw,4.2rem);font-weight:300;font-style:italic;color:#ADA398;line-height:1;letter-spacing:.02em}
+.chapter-body{padding-top:.4rem}
+.chapter-eyebrow{font-family:'Jost',sans-serif;font-size:.5rem;font-weight:300;letter-spacing:.3em;text-transform:uppercase;color:#8A8070;margin-bottom:1.4rem;display:block}
+.chapter-title{font-family:'Cormorant Garamond',serif;font-size:clamp(2rem,4vw,3.2rem);font-weight:300;line-height:1.1;color:#2E2820;margin-bottom:1.6rem;letter-spacing:.01em;transition:color .3s}
+.chapter-desc{font-family:'Cormorant Garamond',serif;font-size:clamp(1.18rem,1.55vw,1.35rem);font-weight:300;font-style:italic;color:#4A4136;line-height:1.78;max-width:760px;margin-bottom:2.5rem}
+.chapter-link{font-family:'Jost',sans-serif;font-size:.54rem;font-weight:300;letter-spacing:.24em;text-transform:uppercase;color:#6B5C3E;display:inline-flex;align-items:center;gap:.6rem;transition:gap .35s}
+.chapter-link::after{content:'→';font-size:.85rem}
+
+/* CLOSING QUOTE */
+.kitchen-coda{padding:7rem 5vw 8rem;background:#E8E2D8;border-top:1px solid #D5CFC4;text-align:center}
+.kitchen-coda p{font-family:'Cormorant Garamond',serif;font-size:clamp(1.25rem,2.2vw,1.7rem);font-weight:300;font-style:italic;color:#8A8070;max-width:620px;margin:0 auto;line-height:1.55;letter-spacing:.02em}
+
+@media(max-width:760px){
+  .kitchen-hero{height:55vh;min-height:400px}
+  .kitchen-masthead{padding:5rem 5vw 3.5rem}
+  .kitchen-toc-label{padding:4rem 5vw 1rem}
+  .chapter{padding:3.5rem 5vw}
+  .chapter-inner{grid-template-columns:1fr;gap:1.5rem}
+  .chapter-numeral{font-size:2.2rem}
+}
+</style>
+</head>
+<body>
+
+<nav class="site-nav" id="siteNav">
+  <a href="../index.html" class="nav-logo">The Quiet Ledger</a>
+  <ul class="nav-links">
+    <li><a href="../letters/index.html">Letters</a></li>
+    <li><a href="index.html">Kitchen</a></li>
+    <li><a href="../philosophy.html">Philosophy</a></li>
+  </ul>
+  <a href="https://shesthegoose.com" target="_blank" class="nav-goose">Things I Love →</a>
+  <button class="nav-hamburger" onclick="openMenu()" aria-label="Menu"><span></span><span></span><span></span></button>
+</nav>
+
+<div class="mobile-nav" id="mobileNav">
+  <button class="mobile-close" onclick="closeMenu()">Close</button>
+  <a href="../letters/index.html" onclick="closeMenu()">Letters</a>
+  <a href="index.html" onclick="closeMenu()">Kitchen</a>
+  <a href="../philosophy.html" onclick="closeMenu()">Philosophy</a>
+  <a href="https://shesthegoose.com" target="_blank" class="goose">Things I Love →</a>
+</div>
+
+<section class="kitchen-hero">
+  <img src="../images/knifebasil.jpeg" alt="A knife and fresh basil on a wooden cutting board">
+  <div class="kitchen-hero-overlay"></div>
+  <div class="kitchen-hero-caption">
+    <span>The Kitchen · The Quiet Ledger</span>
+  </div>
+</section>
+
+<header class="kitchen-masthead">
+  <span class="eyebrow">Food</span>
+  <h1>The <em>Kitchen</em></h1>
+  <p class="lede">Recipes and kitchen rituals meant to be lived with, not rushed through.</p>
+  <span class="kitchen-rule"></span>
+</header>
+
+<div class="kitchen-toc-label">
+  <span>The Chapters</span>
+</div>
+
+<div class="kitchen-chapters">
+
+  <a href="basic-series.html" class="chapter">
+    <div class="chapter-inner">
+      <span class="chapter-numeral">I</span>
+      <div class="chapter-body">
+        <span class="chapter-eyebrow">The Foundation</span>
+        <h2 class="chapter-title">The Basic Series</h2>
+        <p class="chapter-desc">Things you make without planning. The handful of recipes that have earned a place in the rhythm of the week — the ones I return to without thinking, the way you return to a familiar room.</p>
+        <span class="chapter-link">Enter the Series</span>
+      </div>
+    </div>
+  </a>
+
+  <a href="winter-suppers.html" class="chapter">
+    <div class="chapter-inner">
+      <span class="chapter-numeral">II</span>
+      <div class="chapter-body">
+        <span class="chapter-eyebrow">Cold Months</span>
+        <h2 class="chapter-title">Winter Suppers</h2>
+        <p class="chapter-desc">Something warm for the end of the day. Slow pots, long simmers, the kind of food that asks for patience and gives something quiet back.</p>
+        <span class="chapter-link">See the Winter Table</span>
+      </div>
+    </div>
+  </a>
+
+  <a href="spring.html" class="chapter">
+    <div class="chapter-inner">
+      <span class="chapter-numeral">III</span>
+      <div class="chapter-body">
+        <span class="chapter-eyebrow">A New Season</span>
+        <h2 class="chapter-title">Spring Suppers</h2>
+        <p class="chapter-desc">Lighter food, longer days. First herbs, fresh greens, simple suppers as the kitchen opens up again to a different kind of light.</p>
+        <span class="chapter-link">See the Spring Table</span>
+      </div>
+    </div>
+  </a>
+
+</div>
+
+<section class="kitchen-coda">
+  <p>"Cooking is the way I keep time. The way I notice what is in season, what the day asked for, who I shared the table with."</p>
+</section>
+
+<footer>
+  <div class="footer-top">
+    <div class="footer-brand">
+      <h3>The Quiet Ledger</h3>
+      <p>A record of ordinary moments, kept on purpose.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Navigate</h4>
+      <ul>
+        <li><a href="../letters/index.html">Quiet Letters</a></li>
+        <li><a href="basic-series.html">Basic Series</a></li>
+        <li><a href="winter-suppers.html">Winter Suppers</a></li>
+        <li><a href="../philosophy.html">Philosophy</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Also</h4>
+      <ul>
+        <li><a href="https://shesthegoose.com" target="_blank">She's the Goose</a></li>
+      </ul>
+    </div>
+  </div>
+  <p class="footer-bottom">© The Quiet Ledger · Written slowly, published carefully</p>
+</footer>
+
+<script src="../js/main.js"></script>
+</body>
+</html>
