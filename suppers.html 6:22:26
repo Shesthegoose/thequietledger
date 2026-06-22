@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Suppers — The Quiet Ledger</title>
+<meta name="description" content="Savory dinners kept season to season — warm suppers for whatever the light asks for.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Jost:wght@300;400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/style.css">
+<style>
+.sup-masthead{padding:8rem 5vw 3.5rem;text-align:center;background:#F2EFE8}
+.sup-masthead .eyebrow{font-family:'Jost',sans-serif;font-size:.54rem;font-weight:300;letter-spacing:.32em;text-transform:uppercase;color:#8A8070;margin-bottom:1.8rem;display:block}
+.sup-masthead h1{font-family:'Cormorant Garamond',serif;font-size:clamp(3rem,7vw,5.5rem);font-weight:300;line-height:1.05;letter-spacing:.02em;color:#2E2820;margin-bottom:2rem}
+.sup-masthead h1 em{font-style:italic;font-weight:300}
+.sup-masthead .lede{font-family:'Cormorant Garamond',serif;font-size:clamp(1.05rem,1.6vw,1.25rem);font-weight:300;font-style:italic;color:#5A4F42;line-height:1.7;max-width:560px;margin:0 auto;letter-spacing:.01em}
+.sup-plate{background:#F2EFE8;padding:1.5rem 5vw 1rem}
+.sup-plate figure{max-width:500px;margin:0 auto}
+.sup-plate img{width:100%;height:auto;display:block;border:1px solid #D5CFC4}
+.sup-plate figcaption{font-family:'Jost',sans-serif;font-size:.48rem;font-weight:300;letter-spacing:.24em;text-transform:uppercase;color:#ADA398;text-align:center;margin-top:1.3rem}
+.sup-toc-label{text-align:center;padding:6rem 5vw 1.75rem;background:#F2EFE8}
+.sup-toc-label span{font-family:'Jost',sans-serif;font-size:.5rem;font-weight:300;letter-spacing:.36em;text-transform:uppercase;color:#ADA398}
+.sup-chapters{background:#F2EFE8;padding:0 0 6.9rem}
+.chapter{display:block;text-decoration:none;color:inherit;padding:5rem 5vw;border-top:1px solid #D5CFC4;transition:background .35s ease}
+.chapter:last-of-type{border-bottom:1px solid #D5CFC4}
+.chapter:hover{background:#EDE9E1}
+.chapter:hover .chapter-title{color:#6B5C3E}
+.chapter:hover .chapter-link{gap:1.1rem}
+.chapter-inner{max-width:1080px;margin:0 auto;display:grid;grid-template-columns:130px 1fr;gap:4rem;align-items:baseline}
+.chapter-numeral{font-family:'Cormorant Garamond',serif;font-size:clamp(2.8rem,5vw,4.2rem);font-weight:300;font-style:italic;color:#ADA398;line-height:1;letter-spacing:.02em}
+.chapter-body{padding-top:.4rem}
+.chapter-eyebrow{font-family:'Jost',sans-serif;font-size:.5rem;font-weight:300;letter-spacing:.3em;text-transform:uppercase;color:#8A8070;margin-bottom:1.4rem;display:block}
+.chapter-title{font-family:'Cormorant Garamond',serif;font-size:clamp(1.9rem,4vw,3rem);font-weight:300;line-height:1.1;color:#2E2820;margin-bottom:1.4rem;letter-spacing:.01em;transition:color .3s}
+.chapter-desc{font-family:'Cormorant Garamond',serif;font-size:clamp(1.15rem,1.5vw,1.32rem);font-weight:300;font-style:italic;color:#4A4136;line-height:1.78;max-width:760px;margin-bottom:2.2rem}
+.chapter-link{font-family:'Jost',sans-serif;font-size:.54rem;font-weight:300;letter-spacing:.24em;text-transform:uppercase;color:#6B5C3E;display:inline-flex;align-items:center;gap:.6rem;transition:gap .35s}
+.chapter-link::after{content:'\2192';font-size:.85rem}
+.sup-coda{padding:7rem 5vw 8rem;background:#E8E2D8;border-top:1px solid #D5CFC4;text-align:center}
+.sup-coda p{font-family:'Cormorant Garamond',serif;font-size:clamp(1.2rem,2vw,1.6rem);font-weight:300;font-style:italic;color:#8A8070;max-width:640px;margin:0 auto;line-height:1.6;letter-spacing:.02em}
+@media(max-width:760px){
+  .sup-masthead{padding:5rem 6vw 2.5rem}
+  .sup-toc-label{padding:4rem 5vw 1rem}
+  .chapter{padding:3.5rem 6vw}
+  .chapter-inner{grid-template-columns:1fr;gap:1.5rem}
+  .chapter-numeral{font-size:2.2rem}
+}
+</style>
+</head>
+<body>
+
+<nav class="site-nav" id="siteNav">
+  <a href="../index.html" class="nav-logo">The Quiet Ledger</a>
+  <ul class="nav-links">
+    <li><a href="../letters/index.html">Letters</a></li>
+    <li><a href="index.html">Kitchen</a></li>
+    <li><a href="../philosophy.html">Philosophy</a></li>
+  </ul>
+  <a href="https://shesthegoose.com" target="_blank" class="nav-goose">Things I Love &rarr;</a>
+  <button class="nav-hamburger" onclick="openMenu()" aria-label="Menu"><span></span><span></span><span></span></button>
+</nav>
+
+<div class="mobile-nav" id="mobileNav">
+  <button class="mobile-close" onclick="closeMenu()">Close</button>
+  <a href="../letters/index.html" onclick="closeMenu()">Letters</a>
+  <a href="index.html" onclick="closeMenu()">Kitchen</a>
+  <a href="../philosophy.html" onclick="closeMenu()">Philosophy</a>
+  <a href="https://shesthegoose.com" target="_blank" class="goose">Things I Love &rarr;</a>
+</div>
+
+<header class="sup-masthead">
+  <span class="eyebrow">The Kitchen &middot; Chapter II</span>
+  <h1><em>Suppers</em></h1>
+  <p class="lede">Something warm for the end of the day, kept season to season. The table changes with the light; these are the meals that meet it.</p>
+</header>
+
+<section class="sup-plate">
+  <figure>
+    <img src="../images/suppers-hero.jpg" alt="A bowl of brothy pasta and vegetable soup on a pale plate by the window">
+    <figcaption>A pot on the stove, the end of a long day</figcaption>
+  </figure>
+</section>
+
+<div class="sup-toc-label"><span>In Season</span></div>
+
+<div class="sup-chapters">
+
+  <a href="summer-suppers.html" class="chapter">
+    <div class="chapter-inner">
+      <span class="chapter-numeral">I</span>
+      <div class="chapter-body">
+        <span class="chapter-eyebrow">Now &middot; Summer</span>
+        <h2 class="chapter-title">Summer Suppers</h2>
+        <p class="chapter-desc">Warm comfort that still suits the season &mdash; potpies cooling by an open window, the kind of supper that holds a long day together.</p>
+        <span class="chapter-link">See the Summer Table</span>
+      </div>
+    </div>
+  </a>
+
+</div>
+
+<section class="sup-coda">
+  <p>"Fall and winter suppers will join the table as the year turns &mdash; one season at a time, as the light asks for them."</p>
+</section>
+
+<footer>
+  <div class="footer-top">
+    <div class="footer-brand">
+      <h3>The Quiet Ledger</h3>
+      <p>A record of ordinary moments, kept on purpose.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Navigate</h4>
+      <ul>
+        <li><a href="../letters/index.html">Quiet Letters</a></li>
+        <li><a href="index.html">The Kitchen</a></li>
+        <li><a href="basic-series.html">The Basic Series</a></li>
+        <li><a href="suppers.html">Suppers</a></li>
+        <li><a href="from-the-oven.html">From the Oven</a></li>
+        <li><a href="../philosophy.html">Philosophy</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Also</h4>
+      <ul>
+        <li><a href="https://shesthegoose.com" target="_blank">She's the Goose</a></li>
+      </ul>
+    </div>
+  </div>
+  <p class="footer-bottom">&copy; The Quiet Ledger &middot; Written slowly, published carefully</p>
+</footer>
+
+<script src="../js/main.js"></script>
+</body>
+</html>
