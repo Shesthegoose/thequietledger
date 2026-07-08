@@ -87,8 +87,26 @@
 
   <url>
     <loc>https://thequietledger.co/kitchen/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://thequietledger.co/kitchen/from-the-oven</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://thequietledger.co/kitchen/suppers</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://thequietledger.co/kitchen/summer-suppers</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
   </url>
 
   <url>
@@ -98,9 +116,75 @@
   </url>
 
   <url>
-    <loc>https://thequietledger.co/kitchen/winter-suppers</loc>
+    <loc>https://thequietledger.co/kitchen/apple-pie</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://thequietledger.co/kitchen/cherry-pie</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://thequietledger.co/kitchen/pear-tarte-tatin</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://thequietledger.co/kitchen/chocolate-chip-cookies</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://thequietledger.co/kitchen/white-chocolate-macadamia</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://thequietledger.co/kitchen/turkey-potpie</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://thequietledger.co/kitchen/chicken-potpie</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://thequietledger.co/kitchen/italian-pasta-salad</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://thequietledger.co/kitchen/balsamic-meatloaf</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://thequietledger.co/kitchen/pan-seared-salmon</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://thequietledger.co/kitchen/pie-crust</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://thequietledger.co/kitchen/basil-pesto</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
 
   <url>
