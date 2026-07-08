@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>No. 10 · What Comes Back — The Quiet Ledger</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Jost:wght@300;400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<nav class="site-nav" id="siteNav">
+  <a href="../index.html" class="nav-logo">The Quiet Ledger</a>
+  <ul class="nav-links">
+    <li><a href="index.html">Letters</a></li>
+    <li><a href="../kitchen/index.html">Kitchen</a></li>
+    <li><a href="../philosophy.html">Philosophy</a></li>
+  </ul>
+  <a href="https://shesthegoose.com" target="_blank" class="nav-goose">Things I Love →</a>
+  <button class="nav-hamburger" onclick="openMenu()" aria-label="Menu"><span></span><span></span><span></span></button>
+</nav>
+<div class="mobile-nav" id="mobileNav">
+  <button class="mobile-close" onclick="closeMenu()">Close</button>
+  <a href="index.html" onclick="closeMenu()">Letters</a>
+  <a href="../kitchen/index.html" onclick="closeMenu()">Kitchen</a>
+  <a href="../philosophy.html" onclick="closeMenu()">Philosophy</a>
+  <a href="https://shesthegoose.com" target="_blank" class="goose">Things I Love →</a>
+</div>
+
+<article class="letter-page">
+  <p class="letter-page-meta">Spring Letters · No. 10</p>
+  <h1>What Comes Back</h1>
+  <div class="scripture-block">
+    <p>"For, lo, the winter is past, the rain is over and gone; the flowers appear on the earth; the time of the singing of birds is come."</p>
+    <cite>— Song of Solomon 2:11–12</cite>
+  </div>
+  <hr class="letter-divider">
+  <div class="letter-content">
+    <div class="photo-block">
+      <img src="../images/spring-shoots.jpg" alt="Hyacinth shoots breaking through cold soil in early spring">
+    </div>
+    <p>The ground is still cold. I kneel down to it anyway.</p>
+    <p>It is the first afternoon warm enough to be outside without a coat, and I have come to the bed below the stone wall, where the hyacinths are breaking through. They came up before anything else — pale and tightly furled, the whole season pressed into their narrow bodies.</p>
+    <p>I had nearly forgotten them.</p>
+    <p>That is the strange mercy of what gets planted in October. Something pressed into cold ground, when nothing felt hopeful, will come back without being asked. The work was done before the freeze. The hands that did it were tired. And here is the proof, six months later, lifted into the light.</p>
+    <div class="photo-block">
+      <img src="../images/spring-planting.jpg" alt="Hands pressing bulbs into the soil of a spring garden bed">
+    </div>
+    <p>The shovel goes in. The earth turns darker than I expected, already warming beneath the surface.</p>
+    <p>I press the new bulbs into the soil and firm the ground over them. My ring is muddy. My knees ache. I stay anyway.</p>
+    <p>We do not always know what we are tending when we tend it.</p>
+  </div>
+  <div class="letter-closing">
+    <p>This is the work of spring. Not the bloom, not yet. The kneeling. The bending close. The remembering of what was planted.</p>
+    <p>Until next week,<br>Jessica</p>
+  </div>
+  <div class="letter-nav-row">
+    <a href="letter-09.html">← No. 09</a>
+    <a href="index.html">All Letters</a>
+  </div>
+</article>
+
+<footer>
+  <div class="footer-top">
+    <div class="footer-brand">
+      <h3>The Quiet Ledger</h3>
+      <p>A record of ordinary moments, kept on purpose.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Navigate</h4>
+      <ul>
+        <li><a href="index.html">Quiet Letters</a></li>
+        <li><a href="../kitchen/index.html">The Kitchen</a></li>
+        <li><a href="../kitchen/from-the-oven.html">From the Oven</a></li>
+        <li><a href="../kitchen/suppers.html">Suppers</a></li>
+        <li><a href="../philosophy.html">Philosophy</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Also</h4>
+      <ul>
+        <li><a href="https://shesthegoose.com" target="_blank">She's the Goose</a></li>
+      </ul>
+    </div>
+  </div>
+  <p class="footer-bottom">© The Quiet Ledger · Written slowly, published carefully</p>
+</footer>
+<script src="../js/main.js"></script>
+</body>
+</html>
